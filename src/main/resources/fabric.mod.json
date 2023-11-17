@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "revert",
+  "version": "${version}",
+
+  "name": "Revert 23w46a",
+  "description": "Reverts the changes to the crafter and copper bulb made in 23w46a",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/revert/icon.png",
+
+  "entrypoints": {},
+
+  "mixins": [
+    "revert.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "*"
+  }
+}
