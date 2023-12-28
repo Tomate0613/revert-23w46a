@@ -2,12 +2,11 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.tomate.revert.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_13",
+  "refmap": "revert.refmap.json",
   "mixins": [
     "CopperBulbMixin",
     "CrafterBlockMixin"
-  ],
-  "client": [
   ],
   "injectors": {
     "defaultRequire": 1
