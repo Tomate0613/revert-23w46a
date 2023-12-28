@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(CrafterBlock.class)
-public abstract class CrafterMixin {
+public abstract class CrafterBlockMixin {
     @Redirect(method = "neighborChanged", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;scheduleTick(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;I)V"))
     void scheduleTick(Level level, BlockPos blockPos, Block block, int i) {
         level.scheduleTick(blockPos, block, 1);
